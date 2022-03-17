@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Login</title>
+</head>
+<body >
+  <div style="height: 100vh; text-align: center; margin: 2rem; border-radius: 5px; padding: 50px; background-color: darkgray; display: flex; flex-direction: column; align-items: center;">
+    <form id="formaInicioSesion" action="/" method="post">
+       <!-- Campo usuario -->
+  <div class="form-group>
+        <label for="username" class="text form-label">Username</label>
+        <input id="username" type="email" class="form-control" aria-describedby="emailHelp" name="username" required>
+      </div>
+       <!-- Campo password -->
+      <div class="form-group">
+        <label for="password" class="text form-label">Password</label>
+        <input id="password" style="margin: 10px 0px;" type="password" class="form-control" >
+      </div>
+      <!-- Boton de envio -->
+      <button id='myBtn' style="background-color: black; color: white; border-radius: 100px; margin: 20px;" class="btn btn-success mt-3">Iniciar Sesión</button>
+    </form>
+    <div id="usuarios"></div>
+    <div class="button"><a href="signup.html">Registrar Usuario</div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
